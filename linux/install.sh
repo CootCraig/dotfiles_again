@@ -1,5 +1,10 @@
-ln -s ../windows/_vimrc ~/.vimrc
-ln -s ../windows/_gvimrc ~/.gvimrc
-ln -s ../windows/.gitconfig ~/.gitconfig
-ln -s ../windows/vimfiles ~/.vim
+mkdir --parents ~/tmp/vim_temp
+rm --force ~/.vimrc
+ln -s `(cd ..; pwd)`/windows/_vimrc ~/.vimrc
+rm --force ~/.gvimrc
+ln -s `(cd ..; pwd)`/windows/_gvimrc ~/.gvimrc
+rm --force ~/.gitconfig
+ln -s `(cd ..; pwd)`/windows/.gitconfig ~/.gitconfig
+rm --force --recursive ~/.vim
+ln -s `(cd ..; pwd)`/windows/vimfiles ~/.vim
 
