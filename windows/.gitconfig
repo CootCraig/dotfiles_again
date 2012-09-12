@@ -3,4 +3,6 @@
 	email = craig@coot.net
 [github]
 	user = CootCraig
-	token = aac3156b0c8bbc4afb10fa03fbd33a0f
+[core]
+	autocrlf = input
+	eol = native
