@@ -16,12 +16,12 @@ set shortmess=atI
 
 let mapleader = ","
 
- set rtp+=~/.vim/bundle/vundle/
- call vundle#rc()
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
 
- " let Vundle manage Vundle
- " required! 
- Bundle 'gmarik/vundle'
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
 
 Bundle 'godlygeek/csapprox'
 Bundle 'altercation/vim-colors-solarized'
