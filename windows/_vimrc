@@ -38,6 +38,8 @@ Bundle 'tpope/vim-surround'
 Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'vim-scripts/vim-json-bundle'
+Bundle 'Lokaltog/vim-easymotion'
+" Lokaltog/powerline
 
 " NERDTree CONFIGURATION
 
@@ -73,3 +75,30 @@ endif
 let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
+
+" use indents of 2 spaces, and have them copied down lines:
+set expandtab
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+
+" WINDOW SPLITTING
+
+" Open new horizontal split windows below current
+set splitbelow
+
+" Open new vertical split windows to the right
+set splitright
+
+" STATUS BAR CONFIG
+
+set laststatus=2
+set statusline=\ "
+set statusline+=%f\ " file name
+set statusline+=[
+set statusline+=%{strlen(&ft)?&ft:'none'} " filetype
+set statusline+=]
+set statusline+=%h%1*%m%r%w%0* " flag
+set statusline+=%= " right align
+set statusline+=%-14.(%l,%c%V%)\ %<%P " offset
+
