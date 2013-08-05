@@ -1,20 +1,5 @@
- set nocompatible               " be iMproved
- filetype off                   " required!
-
-" Set temporary directory (don't litter local dir with swp/tmp files)
-set directory=~/tmp/vim_temp
-
-set hidden
-
-"Use case-smart searching
-set ignorecase
-set smartcase
-
-set title
-set scrolloff=3
-set shortmess=atI
-
-let mapleader = ","
+set nocompatible               " be iMproved
+filetype off                   " required!
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -41,6 +26,26 @@ Bundle 'vim-scripts/vim-json-bundle'
 Bundle 'Lokaltog/vim-easymotion'
 " Lokaltog/powerline
 
+" Set temporary directory (don't litter local dir with swp/tmp files)
+set directory=~/tmp/vim_temp
+
+set hidden
+
+"Use case-smart searching
+set ignorecase
+set smartcase
+
+set title
+set scrolloff=3
+set shortmess=atI
+
+" show the `best match so far' as search strings are typed:
+set incsearch
+
+" assume the /g flag on :s substitutions to replace all matches in a line:
+set gdefault
+
+let mapleader = ","
 " NERDTree CONFIGURATION
 
 " Enable nice colors
