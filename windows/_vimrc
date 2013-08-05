@@ -24,6 +24,7 @@ Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'vim-scripts/vim-json-bundle'
 Bundle 'Lokaltog/vim-easymotion'
+Bundle 'vim-scripts/UltiSnips'
 " Lokaltog/powerline
 
 " Set temporary directory (don't litter local dir with swp/tmp files)
@@ -44,6 +45,10 @@ set incsearch
 
 " assume the /g flag on :s substitutions to replace all matches in a line:
 set gdefault
+
+" Enable filetype-specific indenting, syntax, and plugins
+filetype plugin indent on
+syntax on
 
 let mapleader = ","
 " NERDTree CONFIGURATION
