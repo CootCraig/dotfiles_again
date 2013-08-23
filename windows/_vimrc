@@ -15,7 +15,7 @@ Bundle 'bitfyre/vim-indent-html'
 Bundle 'thisivan/vim-bufexplorer'
 Bundle 'tsaleh/vim-matchit'
 Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/syntastic'
+" Bundle 'scrooloose/syntastic'
 Bundle 'vim-json-bundle'
 Bundle 'tpope/vim-markdown'
 Bundle 'duff/vim-scratch'
@@ -28,8 +28,10 @@ Bundle 'vim-scripts/UltiSnips'
 " Lokaltog/powerline
 
 " Set temporary directory (don't litter local dir with swp/tmp files)
-set directory=~/tmp/vim_temp
-
+"set directory=~/tmp/vim_temp
+set nobackup
+set nowritebackup
+set noswapfile
 set hidden
 
 "Use case-smart searching
@@ -47,7 +49,7 @@ set incsearch
 set gdefault
 
 " Enable filetype-specific indenting, syntax, and plugins
-filetype plugin indent on
+"filetype plugin indent on
 syntax on
 
 let mapleader = ","
