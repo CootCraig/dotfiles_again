@@ -49,7 +49,7 @@ set incsearch
 set gdefault
 
 " Enable filetype-specific indenting, syntax, and plugins
-"filetype plugin indent on
+filetype plugin indent on
 syntax on
 
 let mapleader = ","
