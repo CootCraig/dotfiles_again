@@ -1,7 +1,7 @@
 set nocompatible               " be iMproved
 filetype off                   " required!
 
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/vimfiles/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle
@@ -23,7 +23,7 @@ Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'vim-scripts/vim-json-bundle'
 Bundle 'Lokaltog/vim-easymotion'
-Bundle 'vim-scripts/UltiSnips'
+" Bundle 'vim-scripts/UltiSnips'
 " Lokaltog/powerline
 
 runtime! macros/matchit.vim
@@ -76,7 +76,7 @@ let NERDTreeIgnore=['\.$', '\~$']
 nmap <F2> :NERDTreeToggle<CR>
 
 syntax enable
-set term=screen-256color
+" set term=screen-256color
 colorscheme solarized
 
 " html indentation provided by Andy Wokula is faster. But you need to make some configuration.
