@@ -1,7 +1,7 @@
 set nocompatible               " be iMproved
 filetype off                   " required!
 
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/vimfiles/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle
@@ -13,10 +13,9 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'pangloss/vim-javascript'
 Bundle 'bitfyre/vim-indent-html'
 Bundle 'thisivan/vim-bufexplorer'
-Bundle 'tsaleh/vim-matchit'
 Bundle 'scrooloose/nerdtree'
 " Bundle 'scrooloose/syntastic'
-Bundle 'vim-json-bundle'
+Bundle 'leshill/vim-json'
 Bundle 'tpope/vim-markdown'
 Bundle 'duff/vim-scratch'
 Bundle 'tpope/vim-surround'
@@ -24,8 +23,10 @@ Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'vim-scripts/vim-json-bundle'
 Bundle 'Lokaltog/vim-easymotion'
-Bundle 'vim-scripts/UltiSnips'
+" Bundle 'vim-scripts/UltiSnips'
 " Lokaltog/powerline
+
+runtime! macros/matchit.vim
 
 " Set temporary directory (don't litter local dir with swp/tmp files)
 "set directory=~/tmp/vim_temp
@@ -75,7 +76,7 @@ let NERDTreeIgnore=['\.$', '\~$']
 nmap <F2> :NERDTreeToggle<CR>
 
 syntax enable
-set term=screen-256color
+" set term=screen-256color
 colorscheme solarized
 
 " html indentation provided by Andy Wokula is faster. But you need to make some configuration.
