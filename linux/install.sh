@@ -3,8 +3,6 @@ rm --force ~/.vimrc
 ln -s `(cd ..; pwd)`/windows/_vimrc ~/.vimrc
 rm --force ~/.gvimrc
 ln -s `(cd ..; pwd)`/windows/_gvimrc ~/.gvimrc
-rm --force ~/.gitconfig
-ln -s `(cd ..; pwd)`/windows/.gitconfig ~/.gitconfig
 rm --force --recursive ~/.vim
 ln -s `(cd ..; pwd)`/windows/vimfiles ~/.vim
 

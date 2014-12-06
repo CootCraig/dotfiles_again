@@ -1,8 +1,0 @@
-[user]
-	name = Craig Anderson
-	email = craig@coot.net
-[github]
-	user = CootCraig
-[core]
-	autocrlf = input
-	eol = native
