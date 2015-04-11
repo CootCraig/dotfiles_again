@@ -4,8 +4,8 @@ filetype off                   " required!
 " Check for windows or linux and set up vundle appropriately
 if !empty(glob("~/.vim"))
    " folder .vim/ exists, assume on linux
-   set rtp+=~/.vim/bundle/vundle/
-   call vundle#rc()
+   set rtp+=~/.vim/bundle/Vundle.vim/
+   call vundle#begin()
 else
    " no folder .vim/ exists, assume on windows and use vimfiles/
    set rtp+=~/vimfiles/bundle/vundle/
@@ -15,7 +15,7 @@ endif
 
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
+Bundle 'gmarik/Vundle.vim'
 
 Bundle 'godlygeek/csapprox'
 Bundle 'altercation/vim-colors-solarized'
@@ -34,6 +34,8 @@ Bundle 'vim-scripts/vim-json-bundle'
 Bundle 'Lokaltog/vim-easymotion'
 " Bundle 'vim-scripts/UltiSnips'
 " Lokaltog/powerline
+
+call vundle#end()
 
 runtime! macros/matchit.vim
 
